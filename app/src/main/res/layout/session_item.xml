@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_seance_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/ic_shower"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <ImageView
+            android:id="@+id/ic_swim"
+            android:layout_width="48dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="100dp"
+            android:layout_toStartOf="@id/text_view_seance_id"
+            android:src="@drawable/ic_swim" />
+
+        <ImageView
+            android:id="@+id/ic_shower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/ic_swim"
+            android:src="@drawable/ic_shower" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_shower"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/text_view_description"
+            android:background="@drawable/roundrect" />
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_time"
+            android:text="Description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/progressBar"
+            android:background="#002bec"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_road1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 1" />
+
+            <TextView
+                android:id="@+id/text_view_road2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 2" />
+
+            <TextView
+                android:id="@+id/text_view_road3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 3" />
+
+            <TextView
+                android:id="@+id/text_view_road4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 4" />
+
+            <TextView
+                android:id="@+id/text_view_road5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 5" />
+
+            <TextView
+                android:id="@+id/text_view_road6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/roundrect"
+                android:text="Дорожка 6" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

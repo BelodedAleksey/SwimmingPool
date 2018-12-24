@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddEditSeanceActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/number_picker_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text=":"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20dp" />
+
+        <NumberPicker
+            android:id="@+id/number_picker_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="2"
+            android:text="SeanceId:"/>
+
+        <TextView
+            android:id="@+id/text_view_edit_seance_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text_road1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road1"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edit_text_road2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road2"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edit_text_road3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road3"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edit_text_road4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road4"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edit_text_road5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road5"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edit_text_road6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Road6"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>
